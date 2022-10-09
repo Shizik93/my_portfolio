@@ -3,6 +3,7 @@ import './App.scss';
 import Home from "../home";
 import Header from "../header";
 import Skills from "../skills";
+import Portfolio from "../portfolio";
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
                 <Home/>
                 <AboutMe/>
                 <Skills/>
+                <Portfolio/>
             </main>
 
 
