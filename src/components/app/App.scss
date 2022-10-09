@@ -1,0 +1,169 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../assets/fonts/Poppins-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../assets/fonts/Poppins-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../assets/fonts/Poppins-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../assets/fonts/Poppins-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../assets/fonts/Poppins-ExtraBold.ttf');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../../assets/fonts/Poppins-Black.ttf');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* App styles */
+html {
+  scroll-behavior: smooth;
+
+  body {
+    @include textStyles($textFontFamily, 1rem, 1.5, $textWhite);
+    background: #dddddd;
+
+    main {
+      > section {
+        position: relative;
+        padding: 4.5rem 0;
+        overflow: hidden;
+
+        &:nth-child(even) {
+          background-color: $sectionBgColor;
+        }
+
+        &:nth-child(odd) {
+          background-color: $sectionBgSecondColor;
+        }
+      }
+    }
+
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 12px;
+
+      @media screen and (max-width: 1199px) {
+        max-width: 960px;
+      }
+
+      @media screen and (max-width: 991px) {
+        max-width: 720px;
+      }
+
+      @media screen and (max-width: 767px) {
+        max-width: 540px;
+      }
+
+      @media screen and (max-width: 575px) {
+        width: 100%;
+      }
+    }
+
+    .darkOverlay {
+      position: relative;
+      z-index: 0;
+
+      &:after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background-color: #111418;
+        opacity: 0.8;
+      }
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      margin-bottom: 0.5rem;
+      font-family: $textFontFamily;
+      font-weight: 500;
+      line-height: 1.2;
+      color: $headingColor;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      font-size: 2.25rem;
+    }
+
+    h3 {
+      font-size: 1.75rem;
+    }
+
+    h4 {
+      font-size: 1.5rem;
+    }
+
+    h5 {
+      font-size: 1.25rem;
+    }
+
+    a {
+      color: $primaryColor;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      line-height: 1.8;
+    }
+  }
+}
+
+
+
+
+
+

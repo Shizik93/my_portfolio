@@ -1,0 +1,108 @@
+@import "../../common/styles/sass/variables";
+@import "../../common/styles/sass/mixins";
+
+.home {
+ /* background-image: url("../../assets/images/photo.jpg");*/
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .container {
+    @include container();
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+    .greetingText {
+      margin: 0 12px;
+      text-align: center;
+
+      @media screen and (max-width: 991px) {
+        margin: 0;
+      }
+
+      h1 {
+        margin-bottom: 1rem;
+        font-size: 4rem;
+        font-weight: 600;
+        color: $textWhite;
+
+        @media screen and (max-width: 1199px) {
+          font-size: calc(1.525rem + 3.3vw);
+        }
+      }
+
+      h4 {
+        margin-bottom: 1.5rem;
+        font-size: 1.3rem;
+        text-transform: capitalize;
+        color: $textLight;
+      }
+
+      p {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+        color: $textWhite;
+      }
+    }
+
+    .mainPhoto {
+      width: 270px;
+      height: 270px;
+      margin: 0 12px;
+      background: lightgray;
+      text-align: center;
+      border: 2px solid #fff;
+      border-radius: 50%;
+
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
+
+      @media screen and (max-width: 991px) {
+        margin-bottom: 40px;
+      }
+    }
+
+    @media screen and (max-width: 991px) {
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
+  }
+
+  .scrollDown {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+
+    .scroll {
+      display: inline-block;
+      height: 50px;
+      width: 30px;
+      border-radius: 30px;
+      border: 2px solid #ffffff;
+      line-height: 60px;
+
+      .arrow {
+        display: inline-block;
+        padding: 3px;
+        border: solid #fff;
+        border-width: 0 3px 3px 0;
+
+        &.down {
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }
+}

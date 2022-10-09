@@ -1,0 +1,42 @@
+@import "./variables";
+
+@mixin container() {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+@mixin textStyles($fontFamily, $fontSize, $lineHeight, $color: $bodyColor) {
+  font-family: $fontFamily;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color: $color;
+}
+
+@mixin button () {
+  display: inline-block;
+  padding: 0.8rem 2.6rem;
+  background-color: transparent;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: $buttonFontSize;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  border-radius: 50rem;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+@mixin buttonColor($bgColor, $textColor, $borderColor) {
+  background-color: $bgColor;
+  color: $textColor;
+  border: 2px solid $borderColor;
+}
+
+@mixin buttonHoverColor($bgColor, $textColor, $borderColor) {
+  background-color: $bgColor;
+  color: $textColor;
+  border-color: $borderColor;
+}
