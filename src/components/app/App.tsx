@@ -4,6 +4,7 @@ import Home from "../home";
 import Header from "../header";
 import Skills from "../skills";
 import Portfolio from "../portfolio";
+import Contacts from "../contacts";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                 <AboutMe/>
                 <Skills/>
                 <Portfolio/>
+                <Contacts/>
             </main>
 
 

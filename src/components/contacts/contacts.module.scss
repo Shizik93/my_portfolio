@@ -1,0 +1,127 @@
+@import "../../common/styles/sass/variables";
+
+.contactsContent {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -3rem -0.75rem 0 -0.75rem;
+}
+
+.contactsList {
+  width: 25%;
+  margin-top: 3rem;
+  padding: 0 12px;
+
+  @media screen and (max-width: 1199px) {
+    width: 33.33%;
+  }
+
+  @media screen and (max-width: 991px) {
+    width: 41.67%;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    text-align: center;
+  }
+
+  h4 {
+    margin-bottom: 1rem;
+    font-size: 1.31rem;
+    color: $textWhite;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin-bottom: 0.25rem;
+    font-size: 1rem;
+    color: $textLight;
+
+    .icon {
+      margin-right: 0.5rem;
+      font-size: 1.125rem;
+      color: $primaryColor;
+    }
+
+    a {
+      color: $textLight;
+    }
+  }
+
+  p:last-of-type {
+    margin-bottom: 1.5rem;
+  }
+
+  .socialContacts {
+    display: flex;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 767px) {
+      justify-content: center;
+    }
+
+    .socialIcon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2px 6px;
+      padding: 3px;
+      width: 26px;
+      height: 26px;
+      font-size: 23px;
+      line-height: 26px;
+      color: #4d555a;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      overflow: hidden;
+
+      &.muted {
+        color: #aab1b8;
+      }
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        color: #fff;
+      }
+
+      .icon {
+        font-size: inherit;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin-top: 3rem;
+  padding: 0 12px;
+
+  @media screen and (max-width: 1199px) {
+    width: 66.67%;
+  }
+
+  @media screen and (max-width: 991px) {
+    width: 58.33%;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    text-align: center;
+  }
+
+  h4 {
+    margin-bottom: 1rem;
+    font-size: 1.31rem;
+    color: $textWhite;
+    text-transform: uppercase;
+  }
+}

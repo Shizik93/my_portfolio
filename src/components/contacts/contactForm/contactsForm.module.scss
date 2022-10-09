@@ -1,0 +1,55 @@
+.formResult {
+  margin-bottom: 15px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1.5rem -0.75rem 0 -0.75rem;
+}
+
+.formGroup {
+  width: 50%;
+  margin-top: 1.5rem;
+  padding: 0 0.75rem;
+
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+  }
+}
+
+.formGroup:nth-child(4) {
+  width: 100%;
+}
+
+.formField {
+  display: block;
+  width: 100%;
+  height: inherit;
+  padding: 0.810rem 0.96rem;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #232a31;
+  border: 1px solid #232a31;
+  border-radius: 0.375rem;
+  transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;;
+}
+
+.formField:focus {
+  border-color: #80bdff;
+  box-shadow: 0 0 5px rgba(128, 189, 255, 0.5);
+  outline: 0;
+}
+
+textarea.formField {
+  min-height: calc(1.5em + 0.75rem + 2px);
+}
+
+.formFooter {
+  width: 100%;
+  margin-top: 1.5rem;
+  text-align: center;
+}
