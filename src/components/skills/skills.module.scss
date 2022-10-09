@@ -1,0 +1,32 @@
+.resumeContent {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1.5rem;
+}
+
+.blockTitle {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.blockTitle h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @media screen and (max-width: 800px) {
+    justify-content: center;
+  }
+}
+.skillsFooter{
+  display: flex;
+  justify-content: center;
+}
+

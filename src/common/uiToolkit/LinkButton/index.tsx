@@ -16,7 +16,7 @@ export default LinkButton
 type LinkButtonPropsType = {
     url: string
     color?: string
-    variant: string
+    variant?: string
     children: ReactNode
 
 } & DetailedHTMLProps<AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>

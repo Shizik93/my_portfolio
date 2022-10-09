@@ -1,0 +1,20 @@
+@import "../../common/styles/sass/mixins";
+
+.header {
+  position: fixed;
+  width: 100%;
+  background: rgba(50, 50, 50, 0.95);
+  z-index: 1;
+
+  .container {
+    @include container();
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 991px) {
+      justify-content: flex-end;
+    }
+  }
+}
