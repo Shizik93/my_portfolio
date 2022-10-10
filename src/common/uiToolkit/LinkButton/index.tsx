@@ -2,8 +2,10 @@ import style from "../../styles/sass/styles.module.scss";
 import {AnchorHTMLAttributes, DetailedHTMLProps, ReactNode} from "react";
 
 const LinkButton = (
+
     {url, color = "primary", variant = "default", children, ...props}: LinkButtonPropsType
 ) => {
+
     const finalClassName = `${style.button} ${style[color]} ${style[variant]}`;
 
     return (

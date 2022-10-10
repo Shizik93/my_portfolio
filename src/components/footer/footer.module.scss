@@ -1,0 +1,16 @@
+@import "../../common/styles/sass/mixins";
+
+.footer {
+  padding: 4.125rem 0;
+  background: #212529;
+  color: rgba(250, 250, 250, 0.8);
+
+  .container {
+    @include container();
+
+    .copyright {
+      margin-bottom: 0;
+      text-align: center;
+    }
+  }
+}

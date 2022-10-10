@@ -20,7 +20,7 @@ const Home = () => {
                 </div>
                 <div>{/*Fade*/}
                     <div className={style.mainPhoto}>
-                        <img src={photo} alt={"Alex Brilevski"}/>
+                        <img src={photo} alt={"Alexandr Kayuda"}/>
                     </div>
                 </div>
             </div>

@@ -2,6 +2,7 @@ import style from "./skills.module.scss"
 
 import LinkButton from "../../common/uiToolkit/LinkButton";
 import Skill from "./skill";
+import SectionTitle from "../../common/uiToolkit/SectionTitle";
 
 const Skills = () => {
     const skills = [
@@ -16,6 +17,7 @@ const Skills = () => {
         <section id={"skills"}>
 
             <div className={"container"}>
+                <SectionTitle title={"Resume"} subtitle={"Skills"}/>
                 <div className={style.blockTitle}>
                     <h3>My Skills</h3>
                 </div>

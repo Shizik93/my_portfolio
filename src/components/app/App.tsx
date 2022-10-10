@@ -5,6 +5,7 @@ import Header from "../header";
 import Skills from "../skills";
 import Portfolio from "../portfolio";
 import Contacts from "../contacts";
+import Footer from "../footer";
 
 function App() {
     return (
@@ -17,7 +18,7 @@ function App() {
                 <Portfolio/>
                 <Contacts/>
             </main>
-
+            <Footer/>
 
 
         </div>
