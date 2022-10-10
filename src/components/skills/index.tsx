@@ -25,9 +25,9 @@ const Skills = () => {
         <section id={"skills"}>
 
             <div className={"container"}>
-                <Slide triggerOnce={true} direction={'down'}>
+                <Slide triggerOnce={true} direction={'up'}>
                     <SectionTitle  title={"Resume"} subtitle={"Skills"}/>
-                </Slide>
+
 
                 <div className={style.blockTitle}>
                     <h3>My Skills</h3>
@@ -42,6 +42,7 @@ const Skills = () => {
                 <div className={style.skillsFooter}>
                     <LinkButton url={'cvFileLink'} target={"_blank"}>Download CV</LinkButton>
                 </div>
+                </Slide>
             </div>
 
         </section>

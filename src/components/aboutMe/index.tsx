@@ -8,7 +8,7 @@ const AboutMe = () => {
     return (
         <section id={"about"}>
             <div className={"container"}>
-                <Slide triggerOnce={true} direction={'down'}>
+                <Slide triggerOnce={true} direction={'up'}>
                     <SectionTitle title={"About me"} subtitle={"Know Me More"}/>
                 </Slide>
 

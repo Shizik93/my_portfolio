@@ -57,14 +57,14 @@ export const Portfolio = () => {
     return (
         <section id={"portfolio"}>
             <div className={"container"}>
-                <Slide triggerOnce={true} direction={'down'}>
+                <Slide triggerOnce={true} direction={'up'}>
                     <SectionTitle title={"Portfolio"} subtitle={"My Projects"}/>
-                </Slide>
-                <div>
-                    <div className={style.projectsList}>
-                        {projects.map(p => <Project key={p.id} project={p}/>)}
+                    <div>
+                        <div className={style.projectsList}>
+                            {projects.map(p => <Project key={p.id} project={p}/>)}
+                        </div>
                     </div>
-                </div>
+                </Slide>
             </div>
         </section>
     );
