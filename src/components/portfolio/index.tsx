@@ -25,7 +25,7 @@ export const Portfolio = () => {
             title: "To-do list",
             previewImage: todoListImage,
             sourceCodeURL: "https://github.com/Shizik93/todolist",
-            gitHubPagesURL: "https://shizik93.github.io/",
+            gitHubPagesURL: "https://shizik93.github.io/todolist",
             stack: "TypeScript, React, Redux, Redux-Thunk, React-Router-dom, Axios, Formik, TDD, Material UI.",
             description: "Educational project",
             period: "Sep. 2022 - Oct. 2022",
