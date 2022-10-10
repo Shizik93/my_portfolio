@@ -1,12 +1,12 @@
 @import "../../../common/styles/sass/variables";
 
 .skill {
+  align-items: center;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  width: 48%;
   margin-bottom: 1.5rem;
   text-align: center;
+  width: 48%;
 
   @media screen and (max-width: 767px) {
     width: 100%;
@@ -34,15 +34,33 @@
     }
 
     .js {
-      background-image: url("../../../assets/icons/icon-js.svg");
+      background-image: url("../../../assets/icons/javascript.svg");
     }
 
     .react {
-      background-image: url("../../../assets/icons/icon-react.svg");
+      background-image: url("../../../assets/icons/react.svg");
     }
 
     .redux {
-      background-image: url("../../../assets/icons/icon-redux.svg");
+      background-image: url("../../../assets/icons/redux.svg");
+    }
+    .eslint{
+      background-image: url("../../../assets/icons/eslint.svg");
+    }
+    .git{
+      background-image: url("../../../assets/icons/git.svg");
+    }
+    .gitHub{
+      background-image: url("../../../assets/icons/github.svg");
+    }
+    .ts{
+      background-image: url("../../../assets/icons/typescript.svg");
+    }
+    .jest{
+      background-image: url("../../../assets/icons/jest.svg");
+    }
+    .storybook{
+      background-image: url("../../../assets/icons/storybook.svg");
     }
   }
 

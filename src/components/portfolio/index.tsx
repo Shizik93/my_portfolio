@@ -1,6 +1,5 @@
 import style from './portfolio.module.scss'
 
-
 import todoListImage from "../../assets/images/todolist.png";
 import counter from "../../assets/images/counter.png";
 import studyCards from "../../assets/images/cards.png";
@@ -33,16 +32,6 @@ export const Portfolio = () => {
         },
         {
             id: 3,
-            title: "Social network",
-            previewImage: 'SocialNetwork',
-            sourceCodeURL: "https://github.com/Shizik93/social-nework-ts",
-            gitHubPagesURL: "https://shizik93.github.io/social-nework-ts",
-            stack: "TypeScript, React, Redux, Redux-Thunk, React-Router-dom, Axios, Redux-Form, Reselect, TDD.",
-            description: "Self-education project",
-            period: "Mar. 2022 - May 2022",
-        },
-        {
-            id: 4,
             title: "Counter",
             previewImage: counter,
             sourceCodeURL: "https://github.com/Shizik93/counter",
@@ -51,6 +40,17 @@ export const Portfolio = () => {
             description: "Educational project",
             period: "Sep. 2022",
         },
+        {
+            id: 4,
+            title: "Social network",
+            previewImage: 'SocialNetwork',
+            sourceCodeURL: "https://github.com/Shizik93/social-nework-ts",
+            gitHubPagesURL: "https://shizik93.github.io/social-nework-ts",
+            stack: "TypeScript, React, Redux, Redux-Thunk, React-Router-dom, Axios, Redux-Form, Reselect, TDD.",
+            description: "Self-education project",
+            period: "Mar. 2022 - May 2022",
+        },
+
 
     ];
 

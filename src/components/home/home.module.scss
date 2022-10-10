@@ -2,7 +2,7 @@
 @import "../../common/styles/sass/mixins";
 
 .home {
- /* background-image: url("../../assets/images/photo.jpg");*/
+  background-image: url("../../assets/images/background.jpeg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -57,7 +57,7 @@
       margin: 0 12px;
       background: lightgray;
       text-align: center;
-      border: 2px solid #fff;
+      border: 2px solid #c95320;
       border-radius: 50%;
 
       img {

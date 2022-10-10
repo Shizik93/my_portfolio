@@ -8,7 +8,7 @@ const Skill = ({title, icon, progress}: SkillPropsType) => {
 
     return (
 
-        <div style={{display:'flex',justifyContent:"center"}}>
+
             <div className={style.skill}>
                 <div className={style.iconBox}>
                     <div className={iconStyle}/>
@@ -23,7 +23,7 @@ const Skill = ({title, icon, progress}: SkillPropsType) => {
                     <Progress progress={progress}/>
                 </div>
             </div>
-        </div>
+
     );
 };
 export default Skill

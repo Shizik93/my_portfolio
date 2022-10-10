@@ -2,6 +2,7 @@ import style from './aboutMe.module.scss'
 import SectionTitle from "../../common/uiToolkit/SectionTitle";
 import LinkButton from "../../common/uiToolkit/LinkButton";
 import {Slide} from "react-awesome-reveal";
+import myCV from '../../assets/files/alexKayudaEn.pdf'
 
 const AboutMe = () => {
     return (
@@ -15,12 +16,10 @@ const AboutMe = () => {
                     <div className={style.aboutText}>
                         <h3>I'm <span className={style.textPrimary}>Alexander Kayuda</span>, a Front-end Developer
                         </h3>
-                        <p>
-                            <br/>
-                            <br/>
-
-                        </p>
-                        <p>
+                        <p>I am a frontend developer with experience SPA development using React, Redux, TypeScript,
+                            JavaScript, SCSS, HTML. <br/>In my free time I delve into familiar technologies, improve my
+                            skills, and also solve problems on Codewars, improve my knowledge of English. <br/>I will
+                            consider options for remote work, work in the office (full-time), ready for relocation.
                         </p>
                     </div>
                     <div className={style.aboutContacts}>
@@ -38,7 +37,7 @@ const AboutMe = () => {
                                 <b>From:</b> Rostov-on-Don, Russia
                             </li>
                         </ul>
-                        <LinkButton url={'s'} variant={'"_blank"'}>Download CV</LinkButton>
+                        <LinkButton url={myCV} variant={'"_blank"'}>Download CV</LinkButton>
                     </div>
                 </div>
             </div>
