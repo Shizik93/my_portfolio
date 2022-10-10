@@ -1,12 +1,16 @@
 import style from './aboutMe.module.scss'
 import SectionTitle from "../../common/uiToolkit/SectionTitle";
 import LinkButton from "../../common/uiToolkit/LinkButton";
+import {Slide} from "react-awesome-reveal";
 
 const AboutMe = () => {
     return (
         <section id={"about"}>
             <div className={"container"}>
-                <SectionTitle title={"About me"} subtitle={"Know Me More"}/>
+                <Slide triggerOnce={true} direction={'down'}>
+                    <SectionTitle title={"About me"} subtitle={"Know Me More"}/>
+                </Slide>
+
                 <div className={style.aboutContent}>
                     <div className={style.aboutText}>
                         <h3>I'm <span className={style.textPrimary}>Alexander Kayuda</span>, a Front-end Developer

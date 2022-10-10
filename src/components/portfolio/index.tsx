@@ -6,6 +6,7 @@ import counter from "../../assets/images/counter.png";
 import studyCards from "../../assets/images/cards.png";
 import SectionTitle from "../../common/uiToolkit/SectionTitle";
 import Project from "./project";
+import {Slide} from "react-awesome-reveal";
 
 
 export const Portfolio = () => {
@@ -56,7 +57,9 @@ export const Portfolio = () => {
     return (
         <section id={"portfolio"}>
             <div className={"container"}>
-                <SectionTitle title={"Portfolio"} subtitle={"My Projects"}/>
+                <Slide triggerOnce={true} direction={'down'}>
+                    <SectionTitle title={"Portfolio"} subtitle={"My Projects"}/>
+                </Slide>
                 <div>
                     <div className={style.projectsList}>
                         {projects.map(p => <Project key={p.id} project={p}/>)}

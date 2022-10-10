@@ -4,12 +4,15 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faGithub, faLinkedinIn, faTelegram} from "@fortawesome/free-brands-svg-icons";
 import {faPhone, faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import ContactForm from "./contactForm";
+import {Slide} from "react-awesome-reveal";
 
 const Contacts = () => {
     return (
-        <section id={"contacts"}>
-            <div className={"container"}>
-                <SectionTitle title={"Contact"} subtitle={"Get in touch"}/>
+        <section style={{minHeight: "85vh"}} id={"contacts"}>
+            <div  className={"container"}>
+                <Slide triggerOnce={true} direction={'down'}>
+                    <SectionTitle title={"Contact"} subtitle={"Get in touch"}/>
+                </Slide>
                 <div>
                     <div className={style.contactsContent}>
                         <div className={style.contactsList}>

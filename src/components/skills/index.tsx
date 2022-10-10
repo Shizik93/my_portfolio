@@ -3,6 +3,7 @@ import style from "./skills.module.scss"
 import LinkButton from "../../common/uiToolkit/LinkButton";
 import Skill from "./skill";
 import SectionTitle from "../../common/uiToolkit/SectionTitle";
+import {Slide} from "react-awesome-reveal";
 
 const Skills = () => {
     const skills = [
@@ -17,7 +18,10 @@ const Skills = () => {
         <section id={"skills"}>
 
             <div className={"container"}>
-                <SectionTitle title={"Resume"} subtitle={"Skills"}/>
+                <Slide triggerOnce={true} direction={'down'}>
+                    <SectionTitle  title={"Resume"} subtitle={"Skills"}/>
+                </Slide>
+
                 <div className={style.blockTitle}>
                     <h3>My Skills</h3>
                 </div>
@@ -25,7 +29,7 @@ const Skills = () => {
                     return <Skill icon={skill.icon} progress={skill.progress} title={skill.title} key={skill.id}/>
                 })}
 
-                <div  className={style.skillsFooter}>
+                <div className={style.skillsFooter}>
                     <LinkButton url={'cvFileLink'} target={"_blank"}>Download CV</LinkButton>
                 </div>
             </div>

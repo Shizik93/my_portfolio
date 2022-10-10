@@ -1,6 +1,6 @@
 import {useState} from "react";
 import style from "./navbar.module.scss";
-import LinkButton from "../../../common/uiToolkit/LinkButton";
+import {Link} from "react-scroll";
 
 
 const Navbar = () => {
@@ -25,14 +25,56 @@ const Navbar = () => {
                 <span/>
             </button>
             <nav className={navbarClassName}>
-                <LinkButton onClick={navLinkClickHandler} className={style.navLink} url={"#home"}
-                            variant={"outlined"}>Home</LinkButton>
-                <LinkButton onClick={navLinkClickHandler} className={style.navLink} url={"#skills"}
-                            variant={"outlined"}>Skills</LinkButton>
-                <LinkButton onClick={navLinkClickHandler} className={style.navLink} url={"#portfolio"}
-                            variant={"outlined"}>Projects</LinkButton>
-                <LinkButton onClick={navLinkClickHandler} className={style.navLink} url={"#contacts"}
-                            variant={"outlined"}>Contacts</LinkButton>
+
+                <Link
+                    className={style.navLink}
+                    activeClass={style.active}
+                    to={"home"}
+                    spy={true}
+                    smooth={true}
+                    offset={-78}
+                    duration={500}
+                    onClick={navLinkClickHandler}
+                >
+                    Home
+                </Link>
+
+                <Link
+                    className={style.navLink}
+                    activeClass={style.active}
+                    to={"skills"}
+                    spy={true}
+                    smooth={true}
+                    offset={-78}
+                    duration={500}
+                    onClick={navLinkClickHandler}
+                >
+                    Skills
+                </Link>
+                <Link
+                    className={style.navLink}
+                    activeClass={style.active}
+                    to={"portfolio"}
+                    spy={true}
+                    smooth={true}
+                    offset={-78}
+                    duration={500}
+                    onClick={navLinkClickHandler}
+                >
+                    Portfolio
+                </Link>
+                <Link
+                    className={style.navLink}
+                    activeClass={style.active}
+                    to={"contacts"}
+                    spy={true}
+                    smooth={true}
+                    offset={-78}
+                    duration={500}
+                    onClick={navLinkClickHandler}
+                >
+                    Contacts
+                </Link>
 
             </nav>
         </>
