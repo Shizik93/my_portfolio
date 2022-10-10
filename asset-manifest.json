@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/my_portfolio/static/css/main.372784f3.css",
+    "main.js": "/my_portfolio/static/js/main.fda338f1.js",
+    "static/js/787.128fc6e9.chunk.js": "/my_portfolio/static/js/787.128fc6e9.chunk.js",
+    "static/media/todolist.png": "/my_portfolio/static/media/todolist.4cd0b397d07fd79cab7c.png",
+    "static/media/photo.jpg": "/my_portfolio/static/media/photo.3e61127055b05a6fb700.jpg",
+    "static/media/Poppins-Regular.ttf": "/my_portfolio/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/Poppins-Medium.ttf": "/my_portfolio/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
+    "static/media/Poppins-SemiBold.ttf": "/my_portfolio/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
+    "static/media/Poppins-Bold.ttf": "/my_portfolio/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
+    "static/media/Poppins-ExtraBold.ttf": "/my_portfolio/static/media/Poppins-ExtraBold.01849ee091e1762a5dd5.ttf",
+    "static/media/Poppins-Black.ttf": "/my_portfolio/static/media/Poppins-Black.d8b850b920a5ef49d752.ttf",
+    "static/media/cards.png": "/my_portfolio/static/media/cards.a70b3a3a4f6d1de8601e.png",
+    "static/media/counter.png": "/my_portfolio/static/media/counter.9a6dc281cf45f1e28c9a.png",
+    "static/media/icon-react.svg": "/my_portfolio/static/media/icon-react.e68b35f4774979ae220b.svg",
+    "static/media/icon-redux.svg": "/my_portfolio/static/media/icon-redux.0e4fb1c819ac4c060c92.svg",
+    "static/media/icon-js.svg": "/my_portfolio/static/media/icon-js.00f3e5cf8bcf4ae623b3.svg",
+    "index.html": "/my_portfolio/index.html",
+    "static/media/icon-css3.svg": "/my_portfolio/static/media/icon-css3.4e47c3122b8d2476a02f.svg",
+    "static/media/icon-html5.svg": "/my_portfolio/static/media/icon-html5.f318c8b1d5945fa9adc8.svg",
+    "main.372784f3.css.map": "/my_portfolio/static/css/main.372784f3.css.map",
+    "main.fda338f1.js.map": "/my_portfolio/static/js/main.fda338f1.js.map",
+    "787.128fc6e9.chunk.js.map": "/my_portfolio/static/js/787.128fc6e9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.372784f3.css",
+    "static/js/main.fda338f1.js"
+  ]
+}
