@@ -7,6 +7,7 @@ import {Slide} from "react-awesome-reveal";
 
 
 const Skills = () => {
+
     const skills = [
         {id: 1, title: "HTML", icon: "html5", progress: 90},
         {id: 2, title: "CSS", icon: "css3", progress: 85},
