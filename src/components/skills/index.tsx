@@ -1,5 +1,5 @@
 import style from "./skills.module.scss"
-
+import myCV from '../../assets/files/alexKayudaEn.pdf'
 import LinkButton from "../../common/uiToolkit/LinkButton";
 import Skill from "./skill";
 import SectionTitle from "../../common/uiToolkit/SectionTitle";
@@ -40,7 +40,7 @@ const Skills = () => {
 
 
                 <div className={style.skillsFooter}>
-                    <LinkButton url={'cvFileLink'} target={"_blank"}>Download CV</LinkButton>
+                    <LinkButton url={myCV} target={"_blank"}>Download CV</LinkButton>
                 </div>
                 </Slide>
             </div>
